@@ -1,0 +1,17 @@
+#home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 10%;
+}
+
+#home section {
+    width: 50%;
+}
+
+#logo-section {
+    background-image: url('../../media/logo.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+}
