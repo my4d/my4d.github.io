@@ -1,6 +1,48 @@
+header {
+    border-bottom: 1px solid black;
+}
+
+#social {
+    display: flex;
+    justify-content: end;
+}
+
+#social ul {
+    width: 10%;
+    position: relative;
+    right: 0;
+    top: 0;
+    border-bottom: 1px solid black;
+    margin: 0 1%;
+}
+
+#social a {
+    color: rgb(47, 47, 85);
+}
+
+#social a:hover {
+    color: red;
+    transform: scale(1.2);
+}
+
 header ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+#nav-links {
+    position: relative;
+    margin: 0;
+    padding: 1em 2em;
+}
+
+#nav-links a {
+    color: rgb(95, 95, 95);
+}
+
+#nav-links a:hover {
+    color: red;
 }
