@@ -2,18 +2,32 @@ header {
     border-bottom: 1px solid black;
 }
 
+header ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 #social {
     display: flex;
     justify-content: end;
 }
 
 #social ul {
-    width: 10%;
+    justify-content: space-evenly;
+    width: 25%;
     position: relative;
     right: 0;
     top: 0;
     border-bottom: 1px solid black;
     margin: 0 1%;
+    padding: 0;
+}
+
+#social li {
+    margin: .3em;
+    border-bottom: 1px solid black;
 }
 
 #social a {
@@ -25,18 +39,9 @@ header {
     transform: scale(1.2);
 }
 
-header ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1%;
-}
-
 #nav-links {
-    position: relative;
     margin: 0;
-    padding: 1em 2em;
+    padding: 1em 0;
 }
 
 #nav-links a {

@@ -4,6 +4,7 @@ const Home = () => {
 	return (
 		<div id='home'>
 			<div id='hero'>
+				<section id='logo-section'></section>
 				<section id='info-section'>
 					<h1>MY4D</h1>
 					<h4>
@@ -19,7 +20,6 @@ const Home = () => {
 						Take Action
 					</a>
 				</section>
-				<section id='logo-section'></section>
 			</div>
 			<div id='latest'>
 				<h2>Latest Event</h2>
