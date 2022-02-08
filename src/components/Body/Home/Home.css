@@ -1,32 +1,36 @@
-main h2,
-main h4 {
-    margin: 1em;
-    padding: 0;
+main h1,
+main h2 {
+    font-variant: small-caps;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
 
-#home div {
-    /* position: relative; */
+main h2,
+main h4 {
+    margin: 0;
+    padding: 1.5em;
 }
 
 #logo-section {
     background-image: url('../../../media/logo.jpeg');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     height: 300px;
-    margin: 2vh auto;
+    width: 300px !important;
+    margin: 5vh auto;
+    border-radius: 50%;
 }
 
-#info-section {}
-
 #info-section h1 {
-    font-size: 50px;
     margin: .5em;
+    font-size: 30px;
 }
 
 #info-section a {
     display: block;
-    margin: 1em 5em;
+    margin: 1em 5em 2em 5em;
     padding: 1em 0;
     color: black;
     border: 1px solid black;
@@ -34,25 +38,47 @@ main h4 {
     box-shadow: 4px 5px 5px rgb(36, 36, 36);
 }
 
+#latest h4,
+#about-us h4 {
+    text-align: left;
+}
+
 #latest {
-    background-color: rgb(34, 34, 34);
-    width: 100vw;
+    background-color: #0c0c22;
     color: white;
+}
+
+#latest div {
+    background-image: url('https://picsum.photos/seed/random/300/300');
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
 }
 
 #about-us {
     width: 100vw;
 }
 
+#about-us div {
+    background-image: url('https://picsum.photos/seed/1000/300/300');
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+}
+
 @media only screen and (min-width: 700px) {
-    #hero {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-content: space-evenly;
+        align-items: center;
         margin: 0 10%;
+        padding-bottom: 5%;
     }
 
-    #hero section {
-        width: 50%;
+    #latest div {
+        grid-column: 2/3;
+        grid-row: 1/2;
     }
 }

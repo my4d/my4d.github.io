@@ -1,7 +1,6 @@
 # Myanmar Youth For Democracy
 
-## Side Note
-!This site is still a work in progress!
+## !This site is still a work in progress!
 
 ## Who We Are
 
