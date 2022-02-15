@@ -55,7 +55,9 @@ main h4 {
 }
 
 #event-pic {
-    background-image: url('https://picsum.photos/seed/random/200/200');
+    background-image: url('https://picsum.photos/seed/random/500/500');
+    background-position: center;
+    background-size: contain;
     height: 200px;
     width: 200px;
     margin: 1em auto;
@@ -78,14 +80,10 @@ main h4 {
     text-align: left;
 }
 
-.info h2 {
-    padding: 1em 0;
-}
-
+.info h2,
 .info h4 {
     padding: 0 0 1em 0;
 }
-
 
 #about-us {
     padding: 10%;
@@ -109,15 +107,16 @@ main h4 {
         grid-template-rows: 1fr;
         justify-content: space-between;
         align-items: center;
+        padding: 10%;
     }
 
     #hero {
-        padding: 10% 5%;
+        padding: 10%;
     }
 
     #latest,
     #about-us {
-        padding: 5% 10%;
+
         position: relative;
     }
 
@@ -128,7 +127,37 @@ main h4 {
         right: 0;
     }
 
+    #event-pic,
+    #about-us div {
+        width: 250px;
+        height: 250px;
+    }
+
     #about-us div {
         margin: 0;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    #info-section a {
+        margin: 1em 2em;
+    }
+
+    #event-pic,
+    #about-us div {
+        position: relative;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #info-section a {
+        margin: 1em 3em;
+    }
+
+    #event-pic,
+    #about-us div {
+        width: 300px;
+        height: 300px;
     }
 }
