@@ -94,7 +94,7 @@ main h4 {
     height: 200px;
     width: 200px;
     margin: 0 auto;
-    background-color: white;
+    background-color: lightgray;
     background-size: contain;
     background-position: center;
     border-radius: 50%;
@@ -107,17 +107,13 @@ main h4 {
         grid-template-rows: 1fr;
         justify-content: space-between;
         align-items: center;
-        padding: 10%;
     }
 
-    #hero {
-        padding: 10%;
-    }
-
+    #hero,
     #latest,
     #about-us {
-
         position: relative;
+        padding: 5%;
     }
 
     #event-pic {
@@ -151,6 +147,13 @@ main h4 {
 }
 
 @media only screen and (min-width: 1200px) {
+
+    #hero,
+    #latest,
+    #about-us {
+        padding: 5% 10%;
+    }
+
     #info-section a {
         margin: 1em 3em;
     }
