@@ -1,6 +1,7 @@
 body {
-  background-color: #e7e9f1;
-  color: black;
+  background: rgb(62, 3, 3);
+  background: linear-gradient(45deg, rgba(62, 3, 3, 1) 0%, rgba(208, 45, 45, 1) 100%);
+  color: lightgray;
   font-family: sans-serif;
 }
 

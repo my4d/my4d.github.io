@@ -1,15 +1,25 @@
 main h1,
 main h2 {
     font-variant: small-caps;
-    font-weight: 500;
-    text-decoration: underline;
-    text-underline-offset: 2px;
+    /* font-weight: 600; */
+    /* text-decoration: underline;
+    text-underline-offset: 2px; */
 }
 
 main h2,
 main h4 {
     margin: 0;
     padding: 1.5em;
+}
+
+#hero {
+    padding: 20% 5% 10% 5%;
+    background: linear-gradient(45deg, rgba(62, 3, 3, 1) 0%, rgb(189, 22, 10) 100%);
+}
+
+#hero div {
+    padding: 5%;
+    background: black;
 }
 
 #logo-section {
@@ -19,23 +29,24 @@ main h4 {
     background-position: top;
     height: 300px;
     width: 300px !important;
-    margin: 5vh auto;
+    position: relative;
+    margin: -20% auto 0 auto;
     border-radius: 50%;
 }
 
 #info-section h1 {
     margin: .5em;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 #info-section a {
     display: block;
-    margin: 1em 5em 2em 5em;
+    margin: 1em auto;
     padding: 1em 0;
+    background: wheat;
     color: black;
     border: 1px solid black;
-    border-radius: 1em;
-    box-shadow: 4px 5px 5px rgb(36, 36, 36);
+    box-shadow: 4px 5px 5px rgb(141, 125, 125);
 }
 
 #latest h4,
@@ -44,15 +55,22 @@ main h4 {
 }
 
 #latest {
-    background-color: #0c0c22;
-    color: white;
+    background-color: black;
+    padding: 10% 5%;
 }
 
-#latest div {
+#event-pic {
     background-image: url('https://picsum.photos/seed/random/300/300');
     height: 300px;
     width: 300px;
     margin: 0 auto;
+    border-radius: 1em;
+}
+
+.event {
+    margin: 2% auto;
+    padding: 5%;
+    background: rgb(41, 41, 41)
 }
 
 #about-us {
@@ -71,8 +89,8 @@ main h4 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        justify-content: space-evenly;
-        align-items: center;
+        justify-content: space-between;
+        align-items: stretch;
         margin: 0 10%;
         padding-bottom: 5%;
     }
