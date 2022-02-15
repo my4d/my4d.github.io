@@ -1,9 +1,6 @@
 main h1,
 main h2 {
     font-variant: small-caps;
-    /* font-weight: 600; */
-    /* text-decoration: underline;
-    text-underline-offset: 2px; */
 }
 
 main h2,
@@ -45,43 +42,64 @@ main h4 {
     padding: 1em 0;
     background: wheat;
     color: black;
-    border: 1px solid black;
-    box-shadow: 4px 5px 5px rgb(141, 125, 125);
-}
-
-#latest h4,
-#about-us h4 {
-    text-align: left;
+    box-shadow: 1px 1px 1px rgb(235, 178, 146),
+        2px 2px 2px rgb(235, 178, 146),
+        3px 3px 3px rgb(235, 178, 146),
+        4px 4px 4px rgb(235, 178, 146),
+        4px 5px 4px rgb(235, 178, 146);
 }
 
 #latest {
     background-color: black;
-    padding: 10% 5%;
+    padding: 10%;
 }
 
 #event-pic {
-    background-image: url('https://picsum.photos/seed/random/300/300');
-    height: 300px;
-    width: 300px;
-    margin: 0 auto;
+    background-image: url('https://picsum.photos/seed/random/200/200');
+    height: 200px;
+    width: 200px;
+    margin: 1em auto;
     border-radius: 1em;
+}
+
+#events {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .event {
     margin: 2% auto;
     padding: 5%;
-    background: rgb(41, 41, 41)
+    background: rgb(20, 20, 20)
 }
 
+.info {
+    text-align: left;
+}
+
+.info h2 {
+    padding: 1em 0;
+}
+
+.info h4 {
+    padding: 0 0 1em 0;
+}
+
+
 #about-us {
-    width: 100vw;
+    padding: 10%;
 }
 
 #about-us div {
-    background-image: url('https://picsum.photos/seed/1000/300/300');
-    height: 300px;
-    width: 300px;
+    background-image: url('/src/media/group-icon.png');
+    height: 200px;
+    width: 200px;
     margin: 0 auto;
+    background-color: white;
+    background-size: contain;
+    background-position: center;
+    border-radius: 50%;
 }
 
 @media only screen and (min-width: 700px) {
@@ -90,13 +108,27 @@ main h4 {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         justify-content: space-between;
-        align-items: stretch;
-        margin: 0 10%;
-        padding-bottom: 5%;
+        align-items: center;
     }
 
-    #latest div {
+    #hero {
+        padding: 10% 5%;
+    }
+
+    #latest,
+    #about-us {
+        padding: 5% 10%;
+        position: relative;
+    }
+
+    #event-pic {
         grid-column: 2/3;
         grid-row: 1/2;
+        position: absolute;
+        right: 0;
+    }
+
+    #about-us div {
+        margin: 0;
     }
 }

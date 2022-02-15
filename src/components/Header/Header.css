@@ -31,14 +31,13 @@ header a:hover {
     position: relative;
     right: 0;
     top: 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
     margin: 0 1%;
     padding: 0;
 }
 
 #social li {
     margin: .3em;
-    border-bottom: 1px solid black;
 }
 
 #nav-links {

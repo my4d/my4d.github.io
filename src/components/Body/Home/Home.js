@@ -18,24 +18,23 @@ const Home = () => {
 					</section>
 				</div>
 			</div>
-			<div id='latest'>
-				<section className='grid'>
-					<div id='event-pic'></div>
-					<section id='latest-info'>
-						<h2>Latest Events</h2>
-						<section id='events'>
-							<div className='event'>Event 1</div>
-							<div className='event'>Event 2</div>
-							<div className='event'>Event 3</div>
-							<div className='event'>Event 4</div>
-						</section>
-					</section>
+			<div id='latest' className='grid'>
+				<div id='event-pic'></div>
+				<section className='info'>
+					<h2>Latest Events</h2>
+					<h4>Latest events in LA devoted to the cause!</h4>
+					<ul id='events'>
+						<li className='event'>Event 1</li>
+						<li className='event'>Event 2</li>
+						<li className='event'>Event 3</li>
+						<li className='event'>Event 4</li>
+					</ul>
 				</section>
 			</div>
-			<div id='about-us'>
-				<h2>Who We Are</h2>
-				<section className='grid'>
-					<div></div>
+			<div id='about-us' className='grid'>
+				<div></div>
+				<section className='info'>
+					<h2>Who We Are</h2>
 					<h4>
 						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
 						consectetur, adipisci velit, sed quia non numquam eius modi tempora
