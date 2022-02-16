@@ -24,8 +24,8 @@ main h4 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
-    height: 300px;
-    width: 300px !important;
+    height: 200px;
+    width: 200px !important;
     position: relative;
     margin: -20% auto 0 auto;
     border-radius: 50%;
@@ -101,6 +101,14 @@ main h4 {
 }
 
 @media only screen and (min-width: 700px) {
+
+    #hero,
+    #latest,
+    #about-us {
+        position: relative;
+        padding: 5%;
+    }
+
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -109,12 +117,11 @@ main h4 {
         align-items: center;
     }
 
-    #hero,
-    #latest,
-    #about-us {
-        position: relative;
-        padding: 5%;
+    #logo-section {
+        width: 300px !important;
+        height: 300px;
     }
+
 
     #event-pic {
         grid-column: 2/3;
